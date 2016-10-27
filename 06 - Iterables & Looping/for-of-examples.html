@@ -39,7 +39,7 @@
   //console.log(total);
 
   const ps = document.querySelectorAll('p');
-  const nodes = Array.prototype.slice.call(ps,0);
+  const nodes = Array.from(ps);
   for (const paragraph of nodes) {
     paragraph.addEventListener('click', function() {
       console.log(this.textContent);
