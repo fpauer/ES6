@@ -27,10 +27,10 @@
   Promise
     .all([postsPromise, streetCarsPromise])
     .then(responses => {
-      return Promise.all(responses.map(res => res.json()))
+        return Promise.all(responses.map(res => res.json()));
     })
     .then(responses => {
-      console.log(responses);
+        console.log(responses);
     });
 </script>
 </body>
