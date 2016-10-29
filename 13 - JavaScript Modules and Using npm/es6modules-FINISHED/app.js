@@ -7,5 +7,6 @@ import User, { createURL, gravatar } from './src/user';
 
 const wes = new User('Wes Bos', 'wesbos@gmail.com', 'wesbos.com');
 const profile = createURL(wes.name);
+console.log(profile);
 const image = gravatar(wes.email);
 console.log(image);
