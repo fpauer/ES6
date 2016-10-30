@@ -21,15 +21,16 @@
 <script>
   const clickCounts = new Map();
   const buttons = document.querySelectorAll('button');
+  const buttonsArray = Array.from(buttons);
 
-  buttons.forEach(button => {
+  for (button of buttonsArray) {
     clickCounts.set(button, 0);
     button.addEventListener('click', function() {
       const val = clickCounts.get(this);
       clickCounts.set(this, val + 1);
       console.log(clickCounts);
     });
-  });
+  };
 </script>
 </body>
 </html>
